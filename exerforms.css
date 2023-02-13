@@ -1,0 +1,89 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Amatic SC', cursive;
+}
+body{
+    background-color:rgba(36, 36, 36, 0.965);
+}
+.form{
+    text-align: center;
+    padding: 30px;
+
+}
+.form img{
+    max-width: 350px;
+    width: 100%;
+    
+}
+.gasp{
+
+    object-position: 50% 100%;
+    color:rgba(77, 207, 227, 0.777);
+    text-shadow:1px 1px 2px rgb(82, 82, 82),0 0 15px rgb(139, 199, 217);
+    font-size: 30px;        font-weight: 900;
+    letter-spacing: 0.2rem;
+    display:flex;
+    width: 273px;
+    max-width: 100%;        max-height: 100%;
+    margin: 10px auto;
+    margin-block-end: 30px;
+    padding-left: 10px;
+    
+    
+    
+}
+.ponto{
+    opacity: 0;
+}
+
+@keyframes iuhu {
+
+    to{transform: translateY(9px)}
+    to{opacity: 0;}
+    
+       
+}
+
+.gasp > div{
+    animation-name: iuhu;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-delay: calc(0.1s * var(--i));
+}
+
+.form input[type = text],[type = password],[type = e-mail]{
+    max-width: 400px;
+    display: block;
+    width: 100%;
+    height: 30px;
+    border-radius: 7px;
+    margin: 10px auto;
+    padding-left: 5px;
+    border: 1px solid #ccc;
+    font-size: 15px;
+}
+.form input[type = submit]{
+    max-width: 400px;
+    display: block;
+    margin: 10px auto;
+    font-family: 'Amatic SC', cursive;
+    background-color: rgba(77, 207, 227, 0.777);
+    border-radius: 30px;
+    width: 100px;
+    cursor: pointer;
+    color: rgb(255, 255, 255);
+}
+footer{
+    width: 100%;
+    text-align:center;
+    display: block;
+    color: aliceblue;
+    text-shadow:1px 1px 2px rgb(82, 82, 82),0 0 15px rgb(139, 199, 217);
+}
+
+@media screen and (max-width:273px){
+    .gasp{width: 100%;}
+}
